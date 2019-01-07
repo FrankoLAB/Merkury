@@ -155,13 +155,21 @@ header {
    overflow: hidden; 
 }
 .promo__cards {
-    margin: 260px 319px 0 334px;
+    margin: 250px 319px 0 334px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .promo__card {
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 360px;
+    transition: 0.5s
+}
+.promo__card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(132, 146, 175, 0.3);
+    transition: 0.5s
 }
 .promo__card img {
     display: block;
@@ -199,10 +207,17 @@ header {
     font-family: 'Roboto';
     font-size: 18px;
     font-weight: 700;
+    transition: 0.5s;
+}
+.promo__card a:hover {
+    background: #5584ff;
+    color: #ffffff;
+    border: 1px solid #5584ff;
+    transition: 0.5s;
 }
 .promo__browser {
     width: 100%;
-    margin: 221px 0 0 0;
+    margin: 211px 0 0 0;
     padding-left: 264px;
     padding-bottom: 83px;
     display: flex;
