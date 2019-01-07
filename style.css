@@ -430,6 +430,7 @@ header {
 }
 .pricing {
     width: 100%;
+    transition: 1s;
 }
 .pricing__title {
     margin: 129px auto 0 auto;
@@ -449,6 +450,23 @@ header {
     width: 360px;
     height: 422px;
     box-shadow: 0 0 70px rgba(0,0,0,0.1);
+    transition: 1.5s;
+}
+.pricing__card:hover {
+    box-shadow: 0 0 100px rgba(0,0,0,0.01);
+    transition: 1.5s;
+}
+.pricing__card:hover h4 {
+    transform: scale(1.2) translateY(-25px);
+    transition: 1.5s;
+}
+.pricing__card:hover .price {
+    transform: scale(1.8);
+    transition: 1.5s;
+}
+.pricing__card:hover .options {
+    transform: scale(1.2) translateY(45px);
+    transition: 1.5s;
 }
 .pricing__card h4 {
     color: #0e1a35;
@@ -458,11 +476,13 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.48px;
     text-align: center;
+    transition: 1s;
 }
 .price {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    transition: 1s;
 }
 .price span:nth-child(1) {
     width: 20px;
@@ -494,6 +514,7 @@ header {
 }
 .options {
     margin: 58px auto 0 auto;
+    transition: 1s;
 }
 .option {
     text-align: center;
