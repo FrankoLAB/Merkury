@@ -315,6 +315,10 @@ header {
     background: #ffffff;
     margin: 10px 0 0 0;   
 }
+.wrap__cardText {
+    display: flex;
+    justify-content: center;
+}
 .card__logo {
     margin: auto 0 auto 30px;
     background: #5584ff;
@@ -327,9 +331,10 @@ header {
     color: #ffffff;
 }
 .cardText {
+    margin-left: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
 }
 .cardText h5 {
@@ -344,6 +349,16 @@ header {
 }
 .card__date p {
     margin: 0;
+    margin-left: 10px;
+}
+.delay {
+    color: #fa81a4;
+}
+.complited {
+    color: #22c839;
+}
+.dayLeft {
+    color: #aab3c6;
 }
 .card__moreInfo {
     font-size: 28px;
@@ -354,7 +369,8 @@ header {
     width: 390px;
     height: 100px;
     border: 1px dashed #8492af;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
+    box-sizing: border-box;
 }
 .dropHere__card h4 {
     color: #8492af;
@@ -523,6 +539,13 @@ header {
     font-weight: 700;
     letter-spacing: 0.24px;
     border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.pricing button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: 0.5s;
 }
 
 footer {
@@ -554,6 +577,12 @@ footer {
     letter-spacing: 0.36px;
     text-decoration: none;
     margin-left: 50px;
+    transition: 0.5s;
+}
+.footer__link:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 .socials {
     margin-left: 49px;
@@ -566,4 +595,10 @@ footer {
     width: 18px;
     height: 18px;
     color: #8492af;
+    transition: 0.5s;
+}
+.socials i:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: 0.5s;
 }
